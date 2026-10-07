@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatGPT Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <div class="sidebar-header">
+        <h1>Chat History</h1>
+        <button id="new-chat" onclick="createNewChat()">New Chat</button>
+      </div>
+      <div id="history-list"></div>
+    </aside>
+
+    <main id="main">
+      <div id="chat-header">
+        <div>
+          <h2 id="chat-title">New chat</h2>
+          <p class="subtitle">Select a conversation on the left or start a new one.</p>
+        </div>
+      </div>
+
+      <div id="chat-container"></div>
+
+      <div id="input">
+        <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off" />
+        <button id="send-button" onclick="sendMessage()">Send</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
